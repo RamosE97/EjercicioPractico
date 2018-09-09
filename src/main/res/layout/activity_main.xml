@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hv12.ejercicio_1_temporizador.MainActivity">
+
+    <TextView
+        android:id="@+id/lblContador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="154dp"
+        android:text="0 segs"
+        android:textSize="28dp" />
+
+    <ProgressBar
+        android:id="@+id/Progress"
+        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="199dp"
+        android:progress="100" />
+    <Button
+        android:id="@+id/btnIniciar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="83dp"
+        android:text="Iniciar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="19dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/Txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editTiempo"
+            android:layout_alignParentStart="true"
+            android:layout_weight="1"
+            android:text="Ingrese tiempo en segundos:"
+            android:textColor="@android:color/background_dark" />
+
+        <EditText
+            android:id="@+id/editTiempo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnIniciar"
+            android:layout_marginBottom="-83dp"
+            android:layout_toEndOf="@+id/lblContador"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>
